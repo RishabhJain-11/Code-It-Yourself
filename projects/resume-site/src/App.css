@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+* {
+  background-color: #374151;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Navbar */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px dashed aliceblue;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.nav-right {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-right img {
+  border: 5px solid #67e8f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-name {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-name:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: #67e8f9;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.logo-name:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-left button {
+  padding: 10px;
+  border: 2px solid #67e8f9;
+  cursor: pointer;
+  font-family: Inconsolata;
+  width: 10rem;
+  box-shadow: 5px 5px #e11d48;
+}
+
+.nav-left button:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  background: #67e8f9;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-left button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* Navbar Finish */
+.main-content {
+  align-items: center;
+  text-align: center;
+  width: 67%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.head1 {
+  padding: 20px;
+  border: 5px solid #67e8f9;
+  margin-bottom: 20px;
+}
+
+.head2 {
+  padding: 10px;
+}
+
+.con-para {
+  padding-top: 20px;
+}
+
+/* Hero Finish */
+
+/* Social Links */
+.slink {
+  border: 2px solid #e11d48;
+  width: 67%;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 5px 5px #67e8f9;
+  margin-top: 50px;
+}
+
+.soc-text {
+  text-align: center;
+  padding-bottom: 40px;
+  text-decoration: underline;
+
+}
+
+.slink a {
+  border: 3px solid #67e8f9;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 5px 5px #e11d48;
+  text-decoration: none;
+}
+
+.sol-a {
+  /* margin-left: 20%; */
+  text-align: center ;
 }
