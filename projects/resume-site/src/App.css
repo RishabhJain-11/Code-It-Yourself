@@ -144,5 +144,17 @@ nav {
 
 .sol-a {
   /* margin-left: 20%; */
-  text-align: center ;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  height: 70px;
+  border-top: 2px dashed aliceblue;
+  margin-top: 30px;
+}
+
+.elem {
+  padding-top: 20px;
 }

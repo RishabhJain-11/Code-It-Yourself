@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Content from './components/Content';
 import SocialLinks from './components/SocialLinks';
 // import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Content />
       <SocialLinks />
       {/* <Projects /> */}
+      <Footer />
     </div>
   );
 }
