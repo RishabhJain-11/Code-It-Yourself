@@ -5,11 +5,7 @@ import rishabh from '../images/rishabhj.jpeg'
 const Projects = () => {
     return (
         <div className='card-container'>
-            <Card
-                title="Card Title"
-                imageUrl={rishabh}
-                body="Ok I am here aqwertyuio pasdfghjkl zxcvbnmn bvcdfgtedwrh"
-            />
+            <Card/>
         </div>
     )
 }
