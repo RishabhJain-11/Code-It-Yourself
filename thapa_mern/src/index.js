@@ -71,12 +71,27 @@ const createDocument = async () => {
 // }
 // getDocument();
 
-const updateDocument = async (_id) => {
-    const res = await Playlist.updateOne({ _id }, {
-        $set: {
-            name:"Database"
-        }
-    });
+// const updateDocument = async (_id) => {
+//     try {
+//         const res = await Playlist.findByIdAndUpdate({ _id }, {
+//             $set: {
+//                 name: "Mongo DB"
+//             }
+//         });
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+
+// updateDocument("64382df8d725a1a4828b34aa");
+
+const deleteDocument = async (_id) => {
+    try {
+        const res = await Playlist.findByIdAndDelete({ _id });
+        console.log("The deleted document is ",res);
+    } catch (error) {
+        console.log("Error Homecoming")
+    }
 }
 
-updateDocument("64382df8d725a1a4828b34aa")
+deleteDocument("64382df8d725a1a4828b34a9");
