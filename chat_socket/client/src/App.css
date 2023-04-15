@@ -125,7 +125,7 @@ body {
     justify-content: flex-start;
 }
 
-#you .message-content {
+.message-content #you {
     justify-content: flex-start;
 }
 
@@ -138,12 +138,12 @@ body {
     justify-content: flex-end;
 }
 
-#other .message-content {
+.message-content #other {
     justify-content: flex-end;
     background-color: cornflowerblue;
 }
 
-#other .message-meta {
+.message-meta #other {
     justify-content: flex-end;
     margin-right: 5px;
 }

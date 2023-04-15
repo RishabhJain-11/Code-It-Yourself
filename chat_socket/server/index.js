@@ -9,6 +9,7 @@ const server = http.createServer(app);
 
 // solving cors error
 const io = new Server(server, {
+    // e.preventDefault();
     cors: {
         origin: "http://localhost:3000",
         methods: ["GET", "POST"],
