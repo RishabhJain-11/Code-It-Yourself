@@ -1,0 +1,70 @@
+.section-projects {
+    border-top: 2px dashed #67e8f9;
+    margin-top: 3em;
+    padding-top: -20px;
+}
+
+.contr {
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contr h1 {
+    font-size: 37px;
+    text-decoration: underline;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -300px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #374151;
+    height: 20vh;
+    /* margin-bottom: px; */
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    width: 100%;
+    background: #374151;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: .3s;
+    border: 2px solid #67e8f9;
+    text-align: center;
+}
+
+.card:hover {
+    border: 2px solid #e11d48;
+}
+
+.buttons button {
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #e11d48;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 20px;
+    max-width: 120px;
+    width: 100%;
+}
+
+.buttons button:hover{
+    border: 2px solid #67e8f9;
+}
