@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-require('./db/conn')
+require('./db/conn');
+const hbs = require('hbs');
 const port = process.env.PORT || 3000;
 
 //setting the path
@@ -14,7 +15,9 @@ app.use('/css', express.static(path.join(__dirname, "../node_modules/bootstrap/d
 app.use('/js', express.static(path.join(__dirname, "../node_modules/bootstrap/dist")));
 app.use('/jq', express.static(path.join(__dirname, "../node_modules/jquery/dist")));
 app.use(express.static(staticPath));
-app.set("view engine", "hbs")
+app.set("view engine", "hbs");
+app.set("views", templatePath);
+hbs.registerPartials(partialPath);
 
 app.get('/', (req, res) => {
     res.render("index");
