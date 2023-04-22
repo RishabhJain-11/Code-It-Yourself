@@ -2,6 +2,7 @@ import React from 'react'
 import emailjs from "@emailjs/browser";
 import { useRef } from 'react';
 import styled from "styled-components";
+// import vector from '../images/vector1.jpg'
 
 const Contact = () => {
   const form = useRef();
@@ -30,7 +31,7 @@ const Contact = () => {
   return (
     <>
       <div className='contact-form-div'>
-        <h1>Contact Form</h1>
+        <h1>Contact Me Here</h1>
         <StyledContactForm>
           <div>Can Message me here 📧</div>
           <form ref={form} onSubmit={sendEmail}>
@@ -51,13 +52,11 @@ const Contact = () => {
 export default Contact;
 
 const StyledContactForm = styled.div`
-  width: 400px;
-  margin-left: 37%;
+  width: 600px;
   margin-top: 2%;
-  margin-bottom: 10%;
   font-size: 30px;
-  border: 3px dashed #67e8f9;
-  padding: 30px;
+  padding: 75px;
+  margin-bottom: 2em;
   form {
     display: flex;
     align-items: flex-start;
@@ -65,6 +64,7 @@ const StyledContactForm = styled.div`
     width: 100%;
     font-size: 16px;
     text-decoration: underline;
+    box-shadow: rgba(0, 0, 0, 0.5);
     input {
       width: 100%;
       height: 35px;

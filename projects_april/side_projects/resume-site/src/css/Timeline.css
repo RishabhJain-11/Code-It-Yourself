@@ -1,6 +1,5 @@
 body {
     background: #3da3d5;
-    /* font-family: "Montserrat", sans-serif; */
     color: rgb(53, 53, 53);
 }
 
@@ -32,7 +31,9 @@ h5 {
 }
 
 .date {
-    color: rgb(201, 251, 255);
+    /* color: rgb(201, 251, 255); */
+    color: e11d48;
+    align-items: center;
 }
 
 #description {
@@ -71,7 +72,9 @@ h5 {
     .vertical-timeline-element-date {
         display: block !important;
         float: none !important;
-        /* color: rgb(44, 44, 44); */
+        color: #e11d48;
         margin-top: 1.5em;
+        background-color: transparent;
+        margin-left: 0px;
     }
 }

@@ -43,6 +43,20 @@ const Projects = () => {
         {
             title: 'QRator',
             text: 'It generates a QR Code for the provided link, which is easy to share and use.'
+        },
+        {
+            title: 'E-Commerce Website',
+            text: 'This e-commerce platform uses stipe payment gateway for payments'
+        }
+        ,
+        {
+            title: 'QRator',
+            text: 'It generates a QR Code for the provided link, which is easy to share and use.'
+        }
+        ,
+        {
+            title: 'QRator',
+            text: 'It generates a QR Code for the provided link, which is easy to share and use.'
         }
     ])
     return (
@@ -51,26 +65,19 @@ const Projects = () => {
                 <div>
                     <section className='section-projects'>
                         <div className="contr">
-                            <h1 className='head1'>Projects</h1>
+                            <h1 className='head1'>Stats</h1>
                             <div className="cards">
                                 {
                                     cards.map((cards, i) => (
                                         <div key={i} className="card">
                                             <h3>{cards.title}</h3>
                                             <p>{cards.text}</p>
-                                            <div className="buttons">
-                                                <button>Live</button>
-                                                <button>Code</button>
-                                            </div>
                                         </div>
                                     ))
                                 }
                             </div>
                         </div>
                     </section>
-                </div>
-                <div className="buttoner">
-                    <button>Show More</button>
                 </div>
             </div>
         </>

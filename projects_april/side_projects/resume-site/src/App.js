@@ -5,7 +5,9 @@ import SocialLinks from './components/SocialLinks';
 import Projects from './components/Projects';
 import Timeline from './components/Timeline';
 import Footer from './components/Footer';
+import Stats from './components/Stats';
 import Form from './components/Contact';
+import TechStack from './components/TechStack';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Content />
       <SocialLinks />
       <Projects />
+      <Stats />
+      <TechStack />
       <Timeline />
       <Form />
       <Footer />
