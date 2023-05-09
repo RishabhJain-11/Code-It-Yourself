@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <h2 class="main-head">Temperature Converter</h2>
+    <div class="form">
+        <div class="container">
+            <label for="celsius">Celsius (°C)</label>
+            <input type="number" id="celsius" oninput="celToFar(), celToKel()">
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit (°F)</label>
+            <input type="number" id="fahrenheit" oninput="farToCel(), farToKel()">
+        </div>
+        <div class="container">
+            <label for="kelvin">Kelvin (°K)</label>
+            <input type="number" id="kelvin" oninput="kelToFar(), kelToCel()">
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            Made by Rishabh Jain: <a href="https://github.com/RishabhJain-11">Github</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
