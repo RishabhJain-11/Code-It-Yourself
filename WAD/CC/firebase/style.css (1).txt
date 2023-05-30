@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     width: 100%;
     height: 100%;
     display: flex;
@@ -14,7 +13,6 @@ body {
     border: none;
     outline: none;
 }
-
 #content_container {
     width: 30%;
     height: 70%;
@@ -102,30 +100,27 @@ input {
 table {
     border-collapse: collapse;
     width: 1000px;
-}
-
-th,
-td {
+  }
+  
+  th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #DDD;
     font-size: 20px;
-}
-
-tr:hover {
-    background-color: #D6EEEE;
-}
-
-
-.home__container {
+  }
+  
+  tr:hover {background-color: #D6EEEE;}
+  
+  
+  .home__container{
     display: flex;
     flex-direction: column;
     height: 100%;
     margin-left: 100px;
     margin-right: 100px;
-}
+  }
 
-.home__container>button {
+  .home__container > button {
     border-radius: 10px;
     margin-left: 50px;
     padding: 10px;
@@ -137,4 +132,4 @@ tr:hover {
     align-self: flex-end;
     margin-top: 50px;
     margin-bottom: 30px;
-}
+  }
